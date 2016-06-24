@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+   <RelativeLayout
+       android:id="@+id/header"
+       android:layout_width="match_parent"
+       android:layout_height="120dp"
+       android:background="@color/bluetitle"
+       android:onClick="ToLogin"
+       >
+
+      <ImageView
+          android:layout_width="60dp"
+          android:layout_height="60dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="50dp"
+          android:background="@mipmap/common_avatar"
+          />
+      <TextView
+          android:layout_width="60dp"
+          android:layout_height="60dp"
+          android:layout_marginLeft="90dp"
+          android:layout_marginTop="70dp"
+          android:textSize="20sp"
+          android:textColor="#ffffff"
+          android:text="未登录"/>
+
+      <Button
+          android:id="@+id/setting"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:layout_alignParentRight="true"
+          android:layout_marginRight="10dp"
+          android:layout_marginTop="10dp"
+          android:background="@mipmap/mine_icon_setting_blue"/>
+
+      <ImageView
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:layout_marginLeft="340dp"
+          android:layout_marginTop="80dp"
+          android:background="@mipmap/common_arrow"
+          />
+
+   </RelativeLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="horizontal"
+       android:layout_height="60dp">
+
+      <LinearLayout
+          android:id="@+id/myMessage"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="match_parent"
+          android:onClick="ToLogin">
+
+         <ImageView
+             android:layout_marginLeft="50dp"
+             android:layout_width="20dp"
+             android:layout_height="15dp"
+             android:layout_gravity="center_vertical"
+             android:background="@mipmap/mine_icon_message"/>
+
+         <TextView
+             android:layout_marginLeft="10dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:text="我的消息"
+             />
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/myOrder"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="match_parent"
+          android:onClick="ToLogin"
+          >
+         <ImageView
+             android:layout_marginLeft="50dp"
+             android:layout_width="20dp"
+             android:layout_height="20dp"
+             android:layout_gravity="center"
+             android:background="@mipmap/mine_icon_order"/>
+
+         <TextView
+             android:layout_marginLeft="10dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:text="我的订单"
+             />
+      </LinearLayout>
+
+   </LinearLayout>
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="10dp"
+       android:background="#F0F0F0"/>
+
+
+   <LinearLayout
+       android:id="@+id/accountInfo"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:onClick="ToLogin">
+
+      <ImageView
+          android:layout_marginLeft="20dp"
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:layout_gravity="center"
+          android:background="@mipmap/mine_icon_account"/>
+
+      <TextView
+          android:layout_marginLeft="10dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:text="账号信息"/>
+
+      <ImageView
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:layout_gravity="center"
+          android:layout_marginLeft="230dp"
+          android:background="@mipmap/common_arrow"
+          />
+
+   </LinearLayout>
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:background="#F0F0F0"/>
+
+   <LinearLayout
+       android:onClick="ToLogin"
+       android:id="@+id/personInfo"
+       android:layout_width="match_parent"
+       android:layout_height="50dp">
+
+      <ImageView
+          android:layout_marginLeft="20dp"
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:layout_gravity="center"
+          android:background="@mipmap/mine_icon_authentication"/>
+
+      <TextView
+          android:layout_marginLeft="10dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:text="跟投人认证"/>
+
+      <ImageView
+          android:layout_marginLeft="80dp"
+          android:layout_width="20dp"
+          android:layout_height="10dp"
+          android:layout_gravity="center"
+          android:background="@mipmap/mine_icon_hot"/>
+
+      <TextView
+          android:layout_marginLeft="10dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:text="新人专享500元"/>
+
+      <ImageView
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:layout_gravity="center"
+          android:layout_marginLeft="15dp"
+          android:background="@mipmap/common_arrow"
+          />
+
+   </LinearLayout>
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="10dp"
+       android:background="#F0F0F0"/>
+
+   <LinearLayout
+       android:onClick="ToLogin"
+       android:id="@+id/myFavorite"
+       android:layout_width="match_parent"
+       android:layout_height="50dp">
+
+      <ImageView
+          android:layout_marginLeft="20dp"
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:layout_gravity="center"
+          android:background="@mipmap/mine_icon_favorite"/>
+
+      <TextView
+          android:layout_marginLeft="10dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:text="我收藏的文章"/>
+
+      <ImageView
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:layout_gravity="center"
+          android:layout_marginLeft="205dp"
+          android:background="@mipmap/common_arrow"
+          />
+
+   </LinearLayout>
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:background="#F0F0F0"/>
+
+   <LinearLayout
+       android:onClick="ToLogin"
+       android:id="@+id/myInvestCompany"
+       android:layout_width="match_parent"
+       android:layout_height="50dp">
+
+      <ImageView
+          android:layout_marginLeft="20dp"
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:layout_gravity="center"
+          android:background="@mipmap/mine_icon_company"/>
+
+      <TextView
+          android:layout_marginLeft="10dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:text="我投资的公司"/>
+
+      <ImageView
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:layout_gravity="center"
+          android:layout_marginLeft="205dp"
+          android:background="@mipmap/common_arrow"
+          />
+
+   </LinearLayout>
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:background="#F0F0F0"/>
+
+   <LinearLayout
+       android:onClick="ToLogin"
+       android:id="@+id/myInvestTickets"
+       android:layout_width="match_parent"
+       android:layout_height="50dp">
+
+      <ImageView
+          android:layout_marginLeft="20dp"
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:layout_gravity="center"
+          android:background="@mipmap/mine_icon_coupon"/>
+
+      <TextView
+          android:layout_marginLeft="10dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:text="我的投资券"/>
+
+      <ImageView
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:layout_gravity="center"
+          android:layout_marginLeft="215dp"
+          android:background="@mipmap/common_arrow"
+          />
+
+   </LinearLayout>
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:background="#F0F0F0"/>
+
+   <LinearLayout
+       android:id="@+id/myUnderstand"
+       android:layout_width="match_parent"
+       android:layout_height="50dp">
+
+      <ImageView
+          android:layout_marginLeft="20dp"
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:layout_gravity="center"
+          android:background="@mipmap/mine_icon_understand"/>
+
+      <TextView
+          android:layout_marginLeft="10dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:text="了解股权投资"/>
+
+      <ImageView
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:layout_gravity="center"
+          android:layout_marginLeft="205dp"
+          android:background="@mipmap/common_arrow"
+          />
+
+   </LinearLayout>
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="10dp"
+       android:background="#F0F0F0"/>
+
+   <LinearLayout
+       android:id="@+id/hotLine"
+       android:layout_width="match_parent"
+       android:layout_height="50dp">
+
+      <ImageView
+          android:layout_marginLeft="20dp"
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:layout_gravity="center"
+          android:background="@mipmap/mine_icon_hotline"/>
+
+      <TextView
+          android:layout_marginLeft="10dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:text="客服热线"/>
+
+      <TextView
+          android:layout_marginLeft="140dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:text="400-995-3636"/>
+
+      <ImageView
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:layout_gravity="center"
+          android:background="@mipmap/common_arrow"
+          />
+
+   </LinearLayout>
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:background="#F0F0F0"/>
+
+   <LinearLayout
+       android:id="@+id/introduce"
+       android:layout_width="match_parent"
+       android:layout_height="50dp">
+
+      <ImageView
+          android:layout_marginLeft="20dp"
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:layout_gravity="center"
+          android:background="@mipmap/mine_icon_commend"/>
+
+      <TextView
+          android:layout_marginLeft="10dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:text="氪推荐"/>
+
+      <TextView
+          android:layout_marginLeft="170dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:text="发现好用App"/>
+
+      <ImageView
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:layout_gravity="center"
+          android:background="@mipmap/common_arrow"
+          />
+
+   </LinearLayout>
+
+
+</LinearLayout>
